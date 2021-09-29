@@ -4,7 +4,7 @@ import cv2
 trained_face_data=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 # img=cv2.imread('man.jpg')
-# 0 means webcam, 'video.mp4' can also be written instead of 0 for detecting video in realtime
+# 0 means webcam, 'video.mp4' can also be written instead of 0 for detecting video in realtimee
 webcam=cv2.VideoCapture(0)
 while(True):
     successful_frame_read,frame=webcam.read()
