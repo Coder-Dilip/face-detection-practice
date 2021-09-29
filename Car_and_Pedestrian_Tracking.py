@@ -8,8 +8,10 @@ pedestrain_file='pedestrains_detector.xml'
 
 car_tracker=cv2.CascadeClassifier(classifier_file)
 pedestrain_tracker=cv2.CascadeClassifier(pedestrain_file)
+
 # start video or recording
 webcam=cv2.VideoCapture('cars-and-pedestrains.mp4')
+
 while(True):
     successful_frame_read,frame=webcam.read()
     img=frame
